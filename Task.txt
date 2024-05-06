@@ -1,0 +1,10 @@
+Выведите имена и отделы всех сотрудников
+SELECT name, departament FROM employees;
+Выведите имена всех сотрудников, у которых зарплата больше 5000.
+SELECT name FROM employees WHERE salary > 5000;
+Выведите имена сотрудников, отсортированные по убыванию зарплаты.
+SELECT name FROM employees ORDER BY salary DESC;
+Подсчитайте количество сотрудников в каждом отделе
+SELECT COUNT (departament), departament FROM employees GROUP BY departament;
+Подсчитать среднюю зарплату среди сотрудников в каждом отделе
+SELECT AVG(salary), departament FROM employees GROUP BY departament;
