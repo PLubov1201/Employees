@@ -1,3 +1,23 @@
+Создание таблицы
+CREATE TABLE Employees 
+(
+id SERIAL PRIMARY KEY,
+name VARCHAR (100),
+departament VARCHAR (100),
+salary NUMERIC
+);
+Добавление информации
+INSERT INTO Employees (name, departament, salary) VALUES ('John', 'IT', 6000);
+INSERT INTO Employees (name, departament, salary) VALUES ('Jane', 'HR', 5500);
+INSERT INTO Employees (name, departament, salary) VALUES ('Alice', 'Finance', 7000);
+INSERT INTO Employees (name, departament, salary) VALUES ('Mike', 'IT', 6500);
+INSERT INTO Employees (name, departament, salary) VALUES ('Josh', 'Finance', 5000);
+INSERT INTO Employees (name, departament, salary) VALUES ('Anna', 'HR', 7000);
+INSERT INTO Employees (name, departament, salary) VALUES ('Maks', 'Engineer', 8000);
+INSERT INTO Employees (name, departament, salary) VALUES ('Tomas', 'Engineer', 6000);
+INSERT INTO Employees (name, departament, salary) VALUES ('Eva', 'Manager', 4500);
+INSERT INTO Employees (name, departament, salary) VALUES ('Nicole', 'Finance', 7500);
+
 Выведите имена и отделы всех сотрудников
 SELECT name, departament FROM employees;
 Выведите имена всех сотрудников, у которых зарплата больше 5000.
